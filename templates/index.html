@@ -21,37 +21,52 @@
             border-top: 2px solid #12691f;
             ;
         }
-        
+
         .container .gif img {
-        display: block;
-        width: 160%; 
-        height: auto;    
-
-        }
-
-        @media (max-width: 600px) {
-        .container .gif img {
-            display: none;
-       
-
-        }
-        }
-
-        .container .gif0 img {
-        display: none;      
-
-        }
-
-        @media (max-width: 600px) {
-        .container .gif0 img {
             display: block;
-            width: 100%; 
+            width: 160%;
             height: auto;
-            margin-left: -40px
 
         }
+
+        @media (max-width: 600px) {
+            .container .gif img {
+                display: none;
+
+
+            }
         }
 
+        .container .gif0 img {
+            display: none;
+
+        }
+
+        @media (max-width: 600px) {
+            .container .gif0 img {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin-left: -40px
+            }
+        }
+
+        #logo-img {
+
+            margin-left: 110px;
+            width: 180px;
+            height: 70px;
+        }
+
+        @media (max-width: 800px) {
+            #logo-img {
+
+                margin-left: 0px;
+                width: 180px;
+                height: 70px;
+
+            }
+        }
     </style>
 </head>
 
@@ -61,7 +76,9 @@
 
     <div>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-            <img class="logo" src="\static\logo.jpeg" style="margin-left: 110px;  width: 180px; height: 70px;">
+
+            <img id="logo-img" src="\static\logo.jpeg">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
                 style=" margin-left: 10px; border-radius: 0px; border-color: #ffffff;">
@@ -102,11 +119,13 @@
                             <img class="logo" src="\static\automated-melanoma-detection.gif">
                         </div>
                         <div class="text-left">
-                            <p style="font-size:18px"><p style="font-size:20px"><strong>Looking for a quicker, more accurate method to identify Melanoma skin
+                            <p style="font-size:18px">
+                            <p style="font-size:20px"><strong>Looking for a quicker, more accurate method to identify
+                                    Melanoma skin
                                     cancer ?</strong> </p>No further than LU Bio Vision,
-                                the framework used to inspecting your skin and produce explainability heatmaps that has
-                                been approved by dermatologists and oncologists.
-                                You can examine your skin with LU Bio Vision and receive the answers you need seconds.
+                            the framework used to inspecting your skin and produce explainability heatmaps that has
+                            been approved by dermatologists and oncologists.
+                            You can examine your skin with LU Bio Vision and receive the answers you need seconds.
                             </p>
                         </div>
                     </div>
@@ -116,7 +135,7 @@
                                 <button type="submit" class="btn btn-outline-success"
                                     style="width: 160px; height: 50px;">Get Started</button>
                             </form>
-                        </br>
+                            </br>
                         </div>
                     </div>
                 </div>
@@ -124,7 +143,7 @@
                     <div class="gif">
                         <img class="logo" src="\static\automated-melanoma-detection.gif">
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -137,7 +156,8 @@
                     deaths annually.
                     Melanoma is the most hazardous type of skin cancer, that develops fast and spreads to other organs.
                     World Health Organization (WHO)
-                    has predicted nearly  <strong> 7,650 melanoma deaths in 2023, with an anticipated 99,780 new cases </strong>  in the USA
+                    has predicted nearly <strong> 7,650 melanoma deaths in 2023, with an anticipated 99,780 new cases
+                    </strong> in the USA
                     . In order to avoid adverse results from the advent,
                     prompt detection and treatment are required. It is primarily recognized and distinguished by
                     expensive and difficult malignant skin development.
@@ -153,7 +173,7 @@
                     However, the black-box nature of the decision-making process of the algorithm challenges the
                     trustworthiness of the model. This can be addressed by explainable
                     artificial intelligence (XAI), which is an evolving area of research.
-                   
+
                 </p>
                 </br>
                 <div class="row">
@@ -179,10 +199,11 @@
                             and GradCAM++ heat maps. (The more general version of Grad-CAM technique, which is known as
                             the Grad-CAM++.
                             )
-                        </br> </br>
-                        So, this application presents a computational model for melanoma identification by using a deep learning
-                        model with transfer learning together with XAI.The proposed approach can assist
-                        dermatologists as a support model for identifying melanoma.
+                            </br> </br>
+                            So, this application presents a computational model for melanoma identification by using a
+                            deep learning
+                            model with transfer learning together with XAI.The proposed approach can assist
+                            dermatologists as a support model for identifying melanoma.
                         </p>
                     </div>
                 </div>
@@ -231,7 +252,7 @@
                             accuracy on SM-Vit than base Vit.
                         </p>
                         <div style="text-align: center;">
-                            <img class="logo" src="static\vit_r.png" style="width: 100%; height: auto;">
+                            <img class="logo" src="static\vit_r.jpg" style="width: 100%; height: auto;">
                         </div>
                         <p style="text-align: justify; font-size: 14px;">
                             Therefore, We have used this SM-VIT model for this web application development.

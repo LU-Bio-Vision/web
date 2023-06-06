@@ -54,7 +54,7 @@
 		}
 
 		@media (max-width: 600px) {
-			.print-area  {
+			.print-area {
 				display: none;
 
 			}
@@ -74,38 +74,58 @@
 
 			/* Sets print area element and all its content to display */
 		}
+
+		#logo-img {
+
+			margin-left: 110px;
+			width: 180px;
+			height: 70px;
+		}
+
+		@media (max-width: 800px) {
+			#logo-img {
+
+				margin-left: 0px;
+				width: 180px;
+				height: 70px;
+
+			}
+		}
 	</style>
 </head>
 
+
+
 <body>
+
 	<div>
-		<div>
-			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-				<img class="logo" src="\static\logo.jpeg" style="margin-left: 110px;  width: 180px; height: 70px;">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-					style=" margin-left: 10px; border-radius: 0px; border-color: #ffffff;">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" style="margin-left: 48%;" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="/">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" style="color: #02c33c;" href="/generate"><strong>Generate</strong></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/usermanual">User Manual</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/aboutus">About Us</a>
-							<!-- <a class="nav-link" style="color: #02c33c;" href="/result"><strong>Result</strong></a> -->
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+
+			<img id="logo-img" src="\static\logo.jpeg">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+				style=" margin-left: 10px; border-radius: 0px; border-color: #ffffff;">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" style="margin-left: 48%;" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color: #02c33c;" href="/generate"><strong>Generate</strong></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/usermanual">User Manual</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/aboutus">About Us</a>
+						<!-- <a class="nav-link" style="color: #02c33c;" href="/result"><strong>Result</strong></a> -->
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	</div>
 
 
@@ -420,7 +440,7 @@
 				document.getElementById("approve_logo").style.display = 'none';
 				document.getElementById("reject_logo").style.display = 'block';
 			}
-			else{
+			else {
 				document.getElementById("approve_logo").style.display = 'block';
 				document.getElementById("reject_logo").style.display = 'none';
 			}
