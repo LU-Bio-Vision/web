@@ -1,6 +1,7 @@
 # Web application 
+
+<img src="https://github.com/LU-Bio-Vision/web/assets/62339931/4965285e-1643-4ce7-acb1-348dd7e6a80e" width="200" height="100">
 ### MELANOMA SKIN CANCER CLASSIFICATION WITH EXPLAINABILITY
-<img src="https://github.com/LU-Bio-Vision/web/assets/62339931/4965285e-1643-4ce7-acb1-348dd7e6a80e" width="200" height="70">
 
 The web application was developed using Python Flask as the backend framework and HTML with Bootstrap for the front end. Python Flask is a lightweight and flexible framework that allows for easy development of web applications. It provides various features and extensions that simplify tasks such as routing, handling HTTP requests, and managing sessions.
 
