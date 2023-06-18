@@ -1,7 +1,6 @@
 # Web application 
 ### MELANOMA SKIN CANCER CLASSIFICATION WITH EXPLAINABILITY
-![logo](https://user-images.githubusercontent.com/62339931/230259789-25f8ad48-21f5-44a2-b695-3fbdddbcfa79.jpeg)
-
+<img src="https://github.com/LU-Bio-Vision/web/assets/62339931/230259789-25f8ad48-21f5-44a2-b695-3fbdddbcfa79" width="200" height="100">
 The web application was developed using Python Flask as the backend framework and HTML with Bootstrap for the front end. Python Flask is a lightweight and flexible framework that allows for easy development of web applications. It provides various features and extensions that simplify tasks such as routing, handling HTTP requests, and managing sessions.
 
 To integrate deep learning models into the web application, we loaded CNN and VIT models into the Flask application. Flask provides an easy way to handle requests and responses, allowing us to define routes for different functionalities of the web application.
